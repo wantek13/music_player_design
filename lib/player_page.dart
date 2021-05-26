@@ -268,7 +268,66 @@ class MusicControlButtonSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      padding: EdgeInsets.only(top: 10),
+      margin: EdgeInsets.all(5),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          IconButton(
+              onPressed: null,
+              icon: Icon(
+                Icons.shuffle,
+                color: Colors.grey,
+                size: 25,
+              )
+          ),
+          IconButton(
+              onPressed: null,
+              icon: Icon(
+                Icons.skip_previous,
+                color: Colors.black,
+                size: 25,
+              )
+          ),
+          ElevatedButton(
+              onPressed: null,
+              child: Container(
+                padding: EdgeInsets.all(10),
+                child: Icon(
+                  Icons.pause,
+                  color: Colors.black,
+                  size: 30,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.blue,
+                shape: CircleBorder(),
+                side: BorderSide(
+                  width: 1,
+                  color: Colors.grey
+                )
+              ),
+          ),
+          IconButton(
+              onPressed: null,
+              icon: Icon(
+                Icons.skip_next,
+                color: Colors.black,
+                size: 25,
+              )
+          ),
+          IconButton(
+              onPressed: null,
+              icon: Icon(
+                Icons.repeat,
+                color: Colors.grey,
+                size: 25,
+              )
+          ),
+        ],
+      ),
+    );
   }
 }
 
